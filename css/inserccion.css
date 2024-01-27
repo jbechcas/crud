@@ -1,0 +1,147 @@
+/***********************************************************************/
+/* Estilo para la insercción de datos (CSS)                            */
+/* Author: Jorge Bech Castillo                                         */                                             
+/***********************************************************************/
+/* Variables globales */
+:root {
+    --color: #ffffff;
+    --primary-color: #0f3460;
+}
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+/* Configuración específica para el HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    background: var(--background); /* Variable no definida */
+    color: var(--color);
+    letter-spacing: 1px;
+    transition: background 0.2s ease; /* Transición del fondo */
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    background-image: url(../img/background.png);
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+/* Estilos para encabezados */
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Estilos específicos para un elemento con id "title" */
+#title {
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+    position: relative;
+    width: 22.2rem;
+}
+
+/* Estilos para el formulario */
+.form-container {
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 99;
+    padding: 2rem;
+}
+
+/* Estilos para los campos de entrada del formulario */
+.login-container form input {
+    display: block;
+    padding: 14.5px;
+    width: 100%;
+    margin: 2rem 0;
+    color: var(--color);
+    outline: none;
+    background-color: #292929a2;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    backdrop-filter: blur(15px);
+}
+
+/* Estilos para los campos de entrada del formulario cuando están enfocados */
+.login-container form input:focus {
+    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+    animation: wobble 0.3s ease-in;
+}
+
+/* Estilos para el botón de envío del formulario */
+.login-container form button {
+    background-color: var(--primary-color);
+    color: var(--color);
+    display: block;
+    padding: 13px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all 0.1s ease-in-out;
+    border: none;
+}
+
+/* Estilos para el botón de envío del formulario cuando se pasa el mouse sobre él */
+.login-container form button:hover {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+/* Estilos para un elemento circular */
+.circle {
+    width: 8rem;
+    height: 8rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Animación de wobble */
+@keyframes wobble {
+    0% {
+        transform: scale(1.025);
+    }
+    25% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.025);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,76 @@
+<!--************************************************************************
+/* Estructura de listado.html                                           *
+/* Author: Jorge Bech Castillo                                             *                                               */
+/*************************************************************************-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado</title>
+    <link rel="stylesheet" href="./css/listado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Interfaz_Web/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2>
+        <ul class="responsive-table">
+            <li class="table-header">
+                <div class="col col-1">USER </div>
+                <div class="col col-2">PASSWORD</div>
+                <div class="col col-3">NAME</div>
+                <div class="col col-4">DATE</div>
+                <div class="col col-5">Gender</div>
+                <div class="col col-6">ACTIONS</div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1" data-label="User">user01</div>
+                <div class="col col-2" data-label="Password">123416523</div>
+                <div class="col col-3" data-label="Name">Jorge</div>
+                <div class="col col-4" data-label="Date">19/06/2005</div>
+                <div class="col col-5" data-label="Gender">Male</div>
+                <div class="col col-6" data-label="Actions">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1" data-label="User">user02</div>
+                <div class="col col-2" data-label="Password">Hola1234</div>
+                <div class="col col-3" data-label="Name">Cristian</div>
+                <div class="col col-4" data-label="Date">09/07/2004</div>
+                <div class="col col-5" data-label="Gender">Male</div>
+                <div class="col col-6" data-label="Actions">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1" data-label="User">user03</div>
+                <div class="col col-2" data-label="Password">contRAseNa</div>
+                <div class="col col-3" data-label="Name">Javi</div>
+                <div class="col col-4" data-label="Date">13/08/2006</div>
+                <div class="col col-5" data-label="Gender">Male</div>
+                <div class="col col-6" data-label="Actions">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1" data-label="User">user04</div>
+                <div class="col col-2" data-label="Password">123416523</div>
+                <div class="col col-3" data-label="Name">Lucia</div>
+                <div class="col col-4" data-label="Date">01/06/2005</div>
+                <div class="col col-5" data-label="Gender">Female</div>
+                <div class="col col-6" data-label="Actions">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+            </li>
+        </ul>
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--************************************************************************
+/* Estructura de insercción.html                                           *
+/* Author: Jorge Bech Castillo                                             *                                          
+/*************************************************************************-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insercción</title>
+    <link rel="stylesheet" href="./css/inserccion.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+</head>
+<body>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <div id="title"><h1 class="opacity">REGISTRAR</h1></div>
+                <form>
+                    <input type="user" name="insert-user" id="insert-user" placeholder="USER" required>
+                    <input type="password" name="insert-password" id="insert-password" placeholder="PASSWORD" required>  
+                    <input type="text" name="insert-name" id="insert-name" placeholder="NAME" required>
+                    <input type="text" name="insert-last-names" id="insert-last-names" placeholder="LAST-NAME" required>
+                    <input type="date" name="insert-date-birthday" id="insert-date-birthday" required>
+                    <select name="insert-gender" id="insert-gender">
+                        <option value="man" selected>Hombre</option>
+                        <option value="woman">Mujer</option>
+                        <option value="other">Otro</option>
+                    </select> <br><br><br><br><br>
+                    <button type="submit" name="submit-register" id="submit-register"  class="opacity">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/***********************************************************************/
+/* Estilo para el listado (CSS)                                        */
+/* Author: Jorge Bech Castillo                                         */                                            
+/***********************************************************************/
+
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: "poppins";
+    background-image: url(../img/background.png);
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Estilos para encabezados secundarios */
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para los elementos "small" dentro de h2 */
+h2 small {
+    font-size: 0.5em;
+}
+
+/* Icono de lápiz cuadrado */
+.fa-pencil-square {
+    color: green;
+}
+
+/* Estilos para una tabla responsiva */
+.responsive-table {
+    /* Estilos para elementos "li" dentro de ".responsive-table" */
+    li {
+        border-radius: 3px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    /* Estilos para "li" cuando se pasa el mouse sobre ellos, excluyendo la cabecera */
+    li:hover:not(.table-header) {
+        background-color: #eeeeee; /* Cambio de color de fondo */
+    }
+
+    /* Estilos para la cabecera de la tabla */
+    .table-header {
+        background-color: #149abba2;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    /* Estilos para las filas de la tabla */
+    .table-row {
+        background-color: #57a2b4e3;
+        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    }
+
+    /* Estilos para columnas específicas */
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
+        flex-basis: 30%;
+    }
+
+    /* Estilos para columnas en dispositivos pequeños */
+    @media all and (max-width: 767px) {
+        /* Ocultar la cabecera de la tabla en dispositivos pequeños */
+        .table-header {
+            display: none;
+        }
+        
+        /* Estilos para elementos "li" en dispositivos pequeños */
+        li {
+            display: block;
+        }
+        
+        /* Estilos para columnas en dispositivos pequeños */
+        .col {
+            flex-basis: 100%;
+            display: flex;
+            padding: 10px 0;
+        }
+        
+        /* Estilos para los pseudo-elementos "before" en dispositivos pequeños */
+        .col:before {
+            color: #003bb9;
+            padding-right: 10px;
+            content: attr(data-label);
+            flex-basis: 50%;
+            text-align: right;
+        }
+    }
+}
+
+/* Estilos generales para los iconos de FontAwesome */
+.fa {
+    font-size: 1.5em;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para el icono de borrar */
+.fa-trash {
+    color: red;
+}
+
+/* Estilos específicos para el icono de lápiz cuadrado */
+.fa-pencil-square {
+    color: rgb(204,145,42);
+}
+
+/* Estilos específicos para el icono de añadir */
+.fa-plus-circle {
+    color: black !important;
+}
